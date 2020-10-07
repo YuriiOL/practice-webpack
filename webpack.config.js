@@ -58,6 +58,10 @@ module.exports = {
           'sass-loader',
         ],
       },
+      {
+        test: /\.(ttf|woff|woff2|eot)$/,
+        use: ['file-loader']
+      }
     ],
   },
 };

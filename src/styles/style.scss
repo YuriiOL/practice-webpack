@@ -1,5 +1,22 @@
-$body-color: red;
+@import './header.scss';
+@import './main.scss';
+@import './footer.scss';
+@import './font.css';
+
+
+@mixin backGround {
+  background-color: #3b3b3b;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
 
 body {
-  background-color: $body-color;
+  @include backGround();
+  height: 100%;
+  width: 100%;
+  color: white;
+  overflow: hidden;
+  font-family: "Roboto";
 }
